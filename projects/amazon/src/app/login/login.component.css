@@ -1,0 +1,27 @@
+/* .form-login {
+
+    width: 300px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid darkcyan;
+    box-shadow: 2px 2px 3px darkcyan;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+button{
+    background-color: darkcyan;
+    color: white;
+} */
+
+.container-fluid {
+    width: 300px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border: 2px solid darkcyan;
+    box-shadow: 2px 2px 3px darkcyan;
+    border-radius: 10px;
+}

@@ -1,0 +1,26 @@
+<div class="container">
+    <h2>Product Details</h2>
+    <dl>
+        <!-- Interpolation Binding-->
+        <dt>Name</dt>
+        <dd>{{Product.Name}}</dd>
+        <dd><input type="text" value="{{Product.Name}}"></dd>
+        <dt>Price</dt>
+        <dd>{{Product.price}}</dd>
+        <dd innerHTML="{{Product.price}}"></dd>
+
+        <!-- Attribute Binding -->
+        <button disabled="{{disabledButton}}">Attribute Binding</button>
+
+        <!-- Property Binding-->
+        <button [disabled]="disabledButton">Property Binding</button>
+
+    </dl>
+
+    <!--Property & Attribute Binding-->
+    
+    <table border="1" [width]="tableWidth" [attr.height]="tableHeight">
+        <td>Name</td>
+        <td>Price</td>
+    </table>
+</div>
