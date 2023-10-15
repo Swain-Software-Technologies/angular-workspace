@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class DirectivespocComponent {
 
+  public product = {
+    productName: 'Campus',
+    productPrice: 4500.56,
+    photo: 'assets/images/shoes.jpg' 
+  };
+
+ public showImage=true;
+ 
+ public btnText='Hide';
+
+  public togglePreview(){
+    this.showImage = (this.showImage==false) ? true : false;
+    this.btnText = (this.btnText=='Show') ? 'Hide' : 'Show';
+  };
+
 }

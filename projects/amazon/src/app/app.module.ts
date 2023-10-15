@@ -9,7 +9,6 @@ import { HomeComponent } from './home.component';
 import { LoginComponent } from './login/login.component';
 import { OnewayComponent } from './oneway/oneway.component';
 import { TwowaybindingComponent } from './twowaybinding/twowaybinding.component';
-import { DirectivepocComponent } from './directivepoc/directivepoc.component';
 import { DirectivespocComponent } from './directivespoc/directivespoc.component';
  
 
@@ -20,7 +19,6 @@ import { DirectivespocComponent } from './directivespoc/directivespoc.component'
     LoginComponent,
     OnewayComponent,
     TwowaybindingComponent,
-    DirectivepocComponent,
     DirectivespocComponent
   ],
   imports: [
@@ -32,6 +30,7 @@ import { DirectivespocComponent } from './directivespoc/directivespoc.component'
   providers: [],
   // bootstrap: [LoginComponent]
   // bootstrap: [OnewayComponent]
-  bootstrap: [TwowaybindingComponent]
+  // bootstrap: [TwowaybindingComponent]
+  bootstrap: [DirectivespocComponent]
 })
 export class AppModule { }
