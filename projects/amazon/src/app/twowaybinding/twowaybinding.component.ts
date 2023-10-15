@@ -11,4 +11,20 @@ export class TwowaybindingComponent {
   public city="Delhi";
   public InStock=false;
 
+  public product = {
+
+    productName: '',
+    city: '',
+    InStock: false 
+
+  };
+
+  public updateProduct() {
+    this.product = {
+      productName: this.productName,
+      city: this.city,
+      InStock: this.InStock
+    };
+  }
+
 }

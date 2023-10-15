@@ -9,6 +9,8 @@ import { HomeComponent } from './home.component';
 import { LoginComponent } from './login/login.component';
 import { OnewayComponent } from './oneway/oneway.component';
 import { TwowaybindingComponent } from './twowaybinding/twowaybinding.component';
+import { DirectivepocComponent } from './directivepoc/directivepoc.component';
+import { DirectivespocComponent } from './directivespoc/directivespoc.component';
  
 
 @NgModule({
@@ -17,7 +19,9 @@ import { TwowaybindingComponent } from './twowaybinding/twowaybinding.component'
     HomeComponent,
     LoginComponent,
     OnewayComponent,
-    TwowaybindingComponent
+    TwowaybindingComponent,
+    DirectivepocComponent,
+    DirectivespocComponent
   ],
   imports: [
     BrowserModule,
