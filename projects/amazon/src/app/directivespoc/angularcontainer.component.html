@@ -1,8 +1,7 @@
 <div class="container-fluid">
     <h2>Directive Example Product Details</h2>
-
-    <!-- Angular if Block [ngIf]-->
     <div class="row">
+        
         <div class="col-3">
             <dl>
                 <dt>Product Name</dt>
@@ -17,13 +16,20 @@
         </div>
 
         <div class="col-9">
-            <div *ngIf="showImage">
-                <img [src]="product.photo" height="100" width="100">
-            </div>           
+            <div *ngIf="showImage; then displayImage else hideImage">
+               
+            </div>
+            <ng-template #displayImage>
+                <img [src]="product.photo" height="150" width="150">
+            </ng-template>
+
+            <ng-template #hideImage>
+                <img alt="Click Preview" height="150" width="150">
+            </ng-template>
+
         </div>
     </div>
 
-    <!--Angualr Container-->
     <div class="row">
         <div>
             <input [(ngModel)]="instock" type="checkbox"> Instock : 

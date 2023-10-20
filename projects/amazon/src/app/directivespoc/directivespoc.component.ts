@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-directivespoc',
-  templateUrl: './directivespoc.component.html',
+  templateUrl: './angularcontainer.component.html',
   styleUrls: ['./directivespoc.component.css']
 })
 export class DirectivespocComponent {
@@ -16,6 +16,8 @@ export class DirectivespocComponent {
  public showImage=true;
  
  public btnText='Hide';
+
+ public instock=true;
 
   public togglePreview(){
     this.showImage = (this.showImage==false) ? true : false;
